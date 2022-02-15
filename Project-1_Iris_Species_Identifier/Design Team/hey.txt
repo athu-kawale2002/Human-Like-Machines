@@ -1,7 +1,7 @@
 Hello Frontend Team:
 All the new Updates will Updated here (in hey.txt) as This:
 Format:
-Date: Word done by you
+Date: Work done by you
 
 15feb: File Created..
 .
