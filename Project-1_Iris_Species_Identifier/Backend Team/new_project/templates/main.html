@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Result</title>
+
+    <script src="https://kit.fontawesome.com/47101d2035.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href={%static 'css/main.css' %}>
+    <style>
+        .center {
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            top: 40%;
+            transform: translate(-50%, -50%);
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url({%static './back-img.jpg' %});
+        }
+    </style>
+</head>
+
+<body class="center">
+
+    {% if result == 'setosa' %}
+    <h1 style=" color: white; font-weight: 900; font-size: 100px;">
+        <i class="fas fa-swimmer"></i> setosa
+    </h1>
+    {% elif result == 'versicolor' %}
+
+    <section class="dark">
+        <div class="container py-4">
+            <h1 class="h1 text-center" id="pageHeaderTitle">Versicolor</h1>
+
+            <article class="postcard dark blue">
+                <a class="postcard__img_link" href="#">
+                    <img class="postcard__img" src={%static './versicolour.jpg' %} alt="Image Title" />
+                </a>
+                <div class="postcard__text">
+                    <h1 class="postcard__title blue"><a href="#">Podcast Title</a></h1>
+                    <div class="postcard__subtitle small">
+                        <time datetime="2020-05-25 12:00:00">
+                            <i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
+                        </time>
+                    </div>
+                    <div class="postcard__bar"></div>
+                    <div class="postcard__preview-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eligendi, fugiat asperiores inventore beatae accusamus odit minima enim, commodi quia, doloribus
+                        eius! Ducimus nemo accusantium maiores velit corrupti tempora reiciendis molestiae repellat
+                        vero. Eveniet ipsam adipisci illo iusto quibusdam, sunt neque nulla unde ipsum dolores nobis
+                        enim quidem excepturi, illum quos!</div>
+                    <ul class="postcard__tagbox">
+                        <li class="tag__item"><i class="fas fa-tag mr-2"></i>wikipedia</li>
+                        <li class="tag__item play blue">
+                            <a href="#"><i class="fas fa-play mr-2"></i>Play Video</a>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+
+            {% else %}
+            <h1 style="color: black; font-weight: 900; font-size: 100px;">
+                <i class="fas fa-swimmer"></i> virginica
+            </h1>
+            {% endif %}
+
+</body>
+
+</html>

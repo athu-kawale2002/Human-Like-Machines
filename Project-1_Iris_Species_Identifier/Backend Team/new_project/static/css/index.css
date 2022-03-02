@@ -1,0 +1,61 @@
+.body-back {
+   background-color: aliceblue;
+  }
+
+  .alert {
+    margin-bottom: 0rem;
+  }
+
+  .jumbotron {
+    background-color: coral;
+    background-image: url('../back-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Orange */
+    color: #ffffff;
+    font-family: "Times New Roman";
+  }
+  img:hover {
+    transform: scaleX(-1);
+  }
+  .model {
+    padding: 100px 120px;
+    font-family: "serif";
+  }
+
+  .f-10 {
+    font-size: 20;
+    font-style: oblique;
+  }
+
+  .padding {
+    padding: 70px 120px;
+  }
+
+  .form-control {
+    background-color: whitesmoke;
+  }
+
+  .btn-default {
+    background-color:rgb(255, 208, 80);
+    border-radius: 12px;
+    border: none;
+  }
+
+  .btn-default:hover {
+    background-color: rgb(209, 226, 53);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+  }
+
+  .btn-default:after {
+    background-color: rgb(209, 226, 53);
+    border: none;
+  }
+
+  .btn-default:active {
+    background-color: rgb(209, 226, 53);
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+    border: none;
+  }
