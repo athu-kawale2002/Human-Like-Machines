@@ -24,5 +24,5 @@ def prediction(request):
             messages.success(request, "Fill all the Input Features to Get Prediction. . .")
             return redirect(index)
         if type(inp1)!=int or type(inp2)!=int or type(inp3)!=int or type(inp4)!=int: 
-            messages.success(request, "Fill all the Input Features String Only. . .")
+            messages.success(request, "Fill all the Input Features numeric value Only. . .")
             return redirect(index)
