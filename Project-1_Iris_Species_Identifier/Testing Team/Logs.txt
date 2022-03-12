@@ -1,0 +1,6 @@
+This log file is for testing team exclusively.
+Please do add logs and other necessary mentions you think are required.
+Note the format: Date: dd/mm/yy - name - content
+
+Date: 12/03/22 - majork25 - 1.Created a seperate folder for Testing Team. 
+                            2.Added the selenium code for automated functional testing.
