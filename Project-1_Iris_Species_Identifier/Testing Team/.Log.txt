@@ -1,4 +1,0 @@
-This is an log file for Tesing Team Only.
-Note:Please Add your logs Related to testing team In following format: Date:dd/mm/yy -your name- content 
-
-Date:12/03/22 - majork25 - Added python file for selenium automated FUnctional Testing
