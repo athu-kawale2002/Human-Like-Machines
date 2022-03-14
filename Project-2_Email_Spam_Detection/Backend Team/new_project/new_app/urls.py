@@ -4,4 +4,5 @@ from new_app import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('spam', views.spam, name='spam'),
 ]

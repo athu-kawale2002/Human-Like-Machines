@@ -1,0 +1,168 @@
+* {
+  padding:0;
+  margin:0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+a{
+  text-decoration: none;
+}
+
+.conta{
+  padding: 0;
+  height:100vh;
+  display: flex;
+}
+
+
+ .section1 {
+  width: 38%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+}
+.section2 {
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex:1;
+  
+}
+.section1 .text{
+   padding: 25% 25px;
+}
+.section1 h1 {
+  font-size: 28px;
+  color:#000;
+  font-weight: 600;
+   padding: 15px 15px;
+}
+.section1 p {
+  font-size: 20px;
+  font-style: oblique;
+  color:#000;
+    padding: 5px 10px;
+}
+.section1 h2 {
+  background:rgba(0,0,0,0.6);
+  width: 53%;
+  margin-left: 15%;
+  color:white;
+  font-size: 20px;
+  font-weight: 100px;
+  padding: 12px 22px;
+}
+.m-5{
+  margin-top: 10%;
+}
+.section2 h1 {
+  font-size: 35px;
+  color:#000;
+  font-weight: 600;
+   padding: 15px 10px;
+}
+.section2 p {
+  font-size: 20px;
+  font-style: oblique;
+  color:#000;
+    padding: 5px 10px;
+}
+
+.photographer{
+  background:url('../img/img.jpg') #c5c9c9;
+  background-position: center;
+ background-size: cover;
+  background-blend-mode: multiply;
+}
+
+
+
+.developer{
+  background:url('../img/img2.jpg') ;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+label {
+  font-size: 17px;
+  font-weight: 500;
+  font-style: oblique;
+}
+
+input[type=text],
+    select {
+      width: 100%;
+      height: 40%;
+      padding: 45px 40px;
+      margin: 8px 0;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    input[type=submit] {
+      width: 80%;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 13px 40px;
+      margin: 4px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #ccc;
+    }
+
+    .popup{
+      width: 400px;
+      background: #fff;
+      border: 1px solid #000;
+      border-radius: 6px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0.1);
+      text-align: center;
+      padding: 0 30pxc 30px;
+      color: #333;
+      visibility: hidden;
+      transition: transform 0.4s, top 0.4s;
+    }
+    .open-popup{
+      visibility: visible;
+      top: 50%;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .popup img{
+      width: 100px;
+      margin-top: -50px;
+      border-radius: 50px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .popup h2{
+      font-size: 30px;
+      font-weight: 500;
+      margin: 30px 0 20px;
+      color: #000;
+    }
+    .popup button{
+      width: 70%;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding: 5px 0px;
+      background: rgb(58, 182, 0);
+      color: #fff;
+      border: 0;
+      outline: none;
+      font-size: 18px;
+      border-radius: 4px;
+      cursor: pointer;
+      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    }
