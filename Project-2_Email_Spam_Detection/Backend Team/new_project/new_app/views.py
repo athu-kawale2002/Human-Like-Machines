@@ -25,4 +25,4 @@ def spam(request):
         messages.success(
                 request, "Enter the email/sms in their respective field once at a time. . .")
         return redirect(index)
-    return render(request,'1.html', {'result': result})
+    return render(request,'index.html', {'result': result})
