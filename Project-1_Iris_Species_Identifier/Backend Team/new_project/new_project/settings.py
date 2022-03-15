@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-utxc+it1xfxf_+69$)xptc8@v+^qiv#83^usrkcgpm6mv#srib
 DEBUG = True
 
 #ALLOWED_HOSTS = ["iris-dataset-prediction-1.herokuapp.com", "localhost"]
-ALLOWED_HOSTS = ['iris-dataset-hlm-project-1.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['iris-dataset-hlm-project-1.herokuapp.com']
 
 
 # Application definition
