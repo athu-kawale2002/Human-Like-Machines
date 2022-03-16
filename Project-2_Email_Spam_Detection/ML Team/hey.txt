@@ -1,1 +1,7 @@
 hey
+
+10/03/2022: email spam detection ml model added in .py and .html format
+
+11/03/2022: email spam detection ml model in .ipynub format added and .html format removed
+
+12/03/2022: SMS spam detection ML model in .ipynub format and.py format files  added and spam.csv and spamraw.csv file added
