@@ -119,7 +119,7 @@ input[type=text],
       background-color: #ccc;
     }
 
-    .popup{
+    #popup{
       width: 400px;
       background: #fff;
       border: 1px solid #000;
@@ -134,24 +134,24 @@ input[type=text],
       visibility: hidden;
       transition: transform 0.4s, top 0.4s;
     }
-    .open-popup{
+    #open-popup{
       visibility: visible;
       top: 50%;
       transform: translate(-50%, -50%) scale(1);
     }
-    .popup img{
+    #popup img{
       width: 100px;
       margin-top: -50px;
       border-radius: 50px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
-    .popup h2{
+    #popup h2{
       font-size: 30px;
       font-weight: 500;
       margin: 30px 0 20px;
       color: #000;
     }
-    .popup button{
+    #popup .popbtn{
       width: 70%;
       margin-top: 10px;
       margin-bottom: 20px;
