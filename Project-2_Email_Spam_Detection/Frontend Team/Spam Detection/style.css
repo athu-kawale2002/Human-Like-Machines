@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 * {
   padding:0;
   margin:0;
@@ -16,8 +19,7 @@ a{
   display: flex;
 }
 
-
- .section1 {
+.section1 {
   width: 38%;
   height:100%;
   display: flex;
@@ -50,14 +52,13 @@ a{
   background:rgba(0,0,0,0.6);
   width: 53%;
   margin-left: 15%;
+  margin-top: 10px;
   color:white;
   font-size: 20px;
   font-weight: 100px;
   padding: 12px 22px;
 }
-.m-5{
-  margin-top: 10%;
-}
+
 .section2 h1 {
   font-size: 35px;
   color:#000;
@@ -68,7 +69,7 @@ a{
   font-size: 20px;
   font-style: oblique;
   color:#000;
-    padding: 5px 10px;
+  padding: 5px 10px;
 }
 
 .photographer{
@@ -91,6 +92,11 @@ label {
   font-weight: 500;
   font-style: oblique;
 }
+.col-field{
+  padding: 1.5rem !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 1rem !important;
+}
 
 input[type=text],
     select {
@@ -105,7 +111,7 @@ input[type=text],
     }
 
     input[type=submit] {
-      width: 80%;
+      width: 90%;
       background: rgba(0,0,0,0.6);
       color: white;
       padding: 13px 40px;
@@ -119,49 +125,91 @@ input[type=text],
       background-color: #ccc;
     }
 
-    #popup{
-      width: 400px;
-      background: #fff;
-      border: 1px solid #000;
-      border-radius: 6px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) scale(0.1);
-      text-align: center;
-      padding: 0 30pxc 30px;
-      color: #333;
-      visibility: hidden;
-      transition: transform 0.4s, top 0.4s;
+ /*---Media Quaries---*/
+ @media screen and (max-width:48em) {
+    .conta{
+   height:100vh;
+   display: grid;
+}
+
+.section1 {
+  width: 100%;
+  height:100%;
+  justify-content: center;
+}
+.section1 .text{
+   padding: 10% 15px;
+}
+.section1 h1 {
+  font-size: 20px;
+  color:#000;
+  font-weight: 600;
+}
+.section1 p {
+  font-size: 16px;
+  font-style: oblique;
+  color:#000;
+}
+.section1 h2 {
+ background: rgba(0,0,0,0.6);
+ width: 35%;
+ margin-left: 23%;
+ margin-top: 0;
+ color: white;
+ font-size: 16px;
+ font-weight: 100px;
+ padding: 8px 10px;
+}
+
+.section2 {
+  height:100%;
+  align-items: center;
+  justify-content: center;
+}
+.section2 h1 {
+  font-size: 25px;
+  color:#000;
+  font-weight: 600;
+  margin-top: 10%;
+  padding: 0;
+}
+.section2 p {
+  font-size: 16px;
+  font-style: oblique;
+  color:#000;
+  padding: 15px 10px;
+}
+
+.col-field{
+  padding: 0 ;
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+}
+input[type=text],
+    select {
+      width: 100%;
+      height: 40%;
+      padding: 45px 40px;
+      margin: 8px 0;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
     }
-    #open-popup{
-      visibility: visible;
-      top: 50%;
-      transform: translate(-50%, -50%) scale(1);
-    }
-    #popup img{
-      width: 100px;
-      margin-top: -50px;
-      border-radius: 50px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-    #popup h2{
-      font-size: 30px;
-      font-weight: 500;
-      margin: 30px 0 20px;
-      color: #000;
-    }
-    #popup .popbtn{
-      width: 70%;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      padding: 5px 0px;
-      background: rgba(0,0,0,0.33);
-      color: #fff;
-      border: 0;
-      outline: none;
-      font-size: 18px;
+
+    input[type=submit] {
+      width: 90%;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      padding: 13px 40px;
+      margin: 4px 0;
+      border: none;
       border-radius: 4px;
       cursor: pointer;
-      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     }
+
+    input[type=submit]:hover {
+      background-color: #ccc;
+    }
+
+}
