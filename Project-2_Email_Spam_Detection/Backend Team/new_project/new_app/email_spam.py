@@ -11,7 +11,7 @@ from sklearn.naive_bayes import MultinomialNB
 def email_spam_detection(string):
     # # Data gathering
 
-    df=pd.read_csv("new_app\csv\spam.csv")
+    df=pd.read_csv('https://raw.githubusercontent.com/athu-kawale2002/Human-Like-Machines/master/Project-2_Email_Spam_Detection/ML%20Team/Spam%20CSV\'s/email_spam.csv')
 
     df.head()
 

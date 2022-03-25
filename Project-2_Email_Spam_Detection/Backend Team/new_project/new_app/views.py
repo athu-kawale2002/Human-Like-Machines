@@ -12,7 +12,6 @@ def spam(request):
     if request.method == 'POST':
         email = request.POST['email']
         sms = request.POST['sms']
-        print(email, sms)
     if email != '' and sms == '':
         result = email_spam_detection(email)
     if sms != '' and email == '':
@@ -25,4 +24,8 @@ def spam(request):
         messages.success(
                 request, "Enter the email/sms in their respective field once at a time. . .")
         return redirect(index)
-    return render(request,'index.html', {'result': result})
+    if email+sms == email:
+        const = True
+    else: 
+        const = False
+    return render(request,'not-spam.html', {'result': result, 'const': const})
