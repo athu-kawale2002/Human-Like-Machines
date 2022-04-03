@@ -12,11 +12,11 @@ Ongoing Projects:
 
 Completed Projects:
 1. Iris DataSet Prediction Using KNN
-.
+2.
 .
 .
 
-Ideas:
+Ideas: ~
 .
 .
 .
