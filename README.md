@@ -7,11 +7,13 @@ Golden Rules:
 Ongoing Projects:
 1.iris species detection
 2.Email Detection Spam or Not Spam
+3.Text Emotion Detection
 .
 .
 
 Completed Projects:
 1. Iris DataSet Prediction Using KNN
+2. Email Detection Spam or Not Spam
 .
 .
 .
