@@ -1,0 +1,32 @@
+{% extends "hello.html" %}
+
+{% block body %}
+{% if val1 %}
+<h2>The Following Pi chart shows the Sentiment Analysis of the text</h2>
+<div id="piechart" style="width: 900px; height: 500px;"></div>
+<script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Emotion', 'Percentage'],
+        ['Happy',     {{ val1.Happy }}],
+        ['Angry',      {{ val1.Angry }}],
+        ['Surprice',  {{ val1.Surprise }}],
+        ['Sad', {{ val1.Sad }}],
+        ['Fear',    {{ val1.Fear }}]
+      ]);
+
+      var options = {
+        title: 'predicted pi-chart'
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+      chart.draw(data, options);
+    }
+  </script>
+  {% endif %}
+{% endblock %}
