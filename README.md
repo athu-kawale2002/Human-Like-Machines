@@ -5,9 +5,9 @@ Golden Rules:
 3. Ask Everything You want to know.
 
 Ongoing Projects:
-1.iris species detection
-2.Email Detection Spam or Not Spam
-3.Text Emotion Detection
+1. iris species detection
+2. Email Detection Spam or Not Spam
+3. Text Emotion Detection
 .
 .
 
